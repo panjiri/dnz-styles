@@ -1,3 +1,6 @@
 body {
     color: red;
 }
+[alt='banner-test'] ~ .extended-banner-texts .extended-banner-title{
+  color: #000;
+}
