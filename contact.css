@@ -1,0 +1,89 @@
+.contact-grid {
+  display: grid;
+  gap: 40px;
+  margin: 20px 20px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 800px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+  margin: 80px 80px;
+  }
+}
+
+/* left info */
+.contact-grid__title {
+  font-size: clamp(32px, 5vw, 80px);
+  font-weight: 300;
+  line-height: 1.2;
+}
+.contact-grid__text {
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+.contact-grid__meta {
+  display: flex;
+flex-direction: column;
+  gap: 12px;
+}
+
+.contact-grid__meta-item {
+  font-size: clamp(24px, 5vw, 50px);
+  font-weight: 700;
+  position: relative;
+}
+.contact-grid__meta-item:hover {
+  text-decoration: underline;
+}
+
+/* right cards */
+.contact-grid__cards {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 600px) {
+  .contact-grid__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* person card */
+.contact-card {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 16px;
+  border-radius: 12px;
+}
+.contact-card__photo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.contact-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.contact-card__role {
+  font-size: 14px;
+}
+.contact-card__name {
+  font-size: 20px;
+  font-weight: 700;
+}
+.contact-card__tel,
+.contact-card__mail {
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px; /* Optional: space between the initial and the number/address */
+ font-size: 14px;
+  text-decoration: none;
+}
+.contact-card__tel:hover,
+.contact-card__mail:hover {
+  text-decoration: underline;
+}
