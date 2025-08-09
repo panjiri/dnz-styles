@@ -1,0 +1,19 @@
+.section-text {
+  /* Make the inline <span> behave like a block to apply margins and center text */
+  display: block;
+  text-align: center;
+
+  /* Font styling */
+  font-size: clamp(32px, 5vw, 80px);
+  font-weight: 300;
+  line-height: 1.2;
+
+  /* Responsive margin, simplified from the original wrapper */
+  margin: 20px;
+}
+
+@media (min-width: 800px) {
+  .section-title {
+    margin: 60px;
+  }
+}
