@@ -1,0 +1,35 @@
+/* Image block */
+.category-image {
+  width: 100%;
+  height: 200px;
+  max-height: 300px;
+  background: center / cover no-repeat;
+  border-radius: 8px;
+}
+
+/* Text part */
+.category-content {
+  margin-top: 24px;
+  padding: 0 8px;
+}
+
+@media (min-width: 768px) {
+  .category-content {
+    margin-top: 32px;
+    padding: 0 16px;
+  }
+}
+
+/* Buttons row */
+.category-buttons {
+  display: flex;
+  gap: 30px;
+}
+
+.category-buttons a {
+  flex: 1;            /* replaces width:100% and auto-stretches */
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background: green;
+}
