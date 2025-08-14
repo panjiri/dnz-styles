@@ -1,18 +1,14 @@
-/* 1) Mobile: 1 column */
 .grid--stats {
   display: grid;
   gap: 16px;
-  grid-template-columns: 1fr;
   margin: 0 auto;
 }
 
-/* Card base */
 .grid--stats__card {
   display: flex;
+  padding: 40px;
   flex-direction: column;
-  justify-content: center;
-  height: 200px;
-  padding: 32px 24px;
+  justify-content: start;
   background-color: #010A1E;
   border-radius: 12px;
   text-align: center;
@@ -21,33 +17,42 @@
 
 .grid--stats__card span {
   display: block;
-  font-size: 6rem;
+  font-size: clamp(60px, 7.8125vw, 150px);
   font-weight: bold;
   color: #39D54A;
-  margin-bottom: 8px;
   line-height: 1;
 }
 
 .grid--stats__card p {
-  font-size: 1.25rem;
+  font-size: 14px;
   line-height: 1.4;
   margin: 0;
 }
 
-/* 2) Tablet & “mid-desk” (600–1199px): 2 columns, no spans */
+
+/* --- 1) Mobile (Default): 1 column --- */
+.grid--stats {
+  grid-template-columns: 1fr;
+}
+
+
+/* --- 2) Tablet (600px and up): 2 columns --- */
 @media (min-width: 600px) {
   .grid--stats {
     grid-template-columns: repeat(2, 1fr);
   }
-  /* .grid--stats__card--span-2 sits in one col here */
 }
 
-/* 3) Desktop (1200px+): 4 columns, span-2 → 2 columns */
+
+/* --- 3) Desktop (1200px and up): 3 flexible columns --- */
 @media (min-width: 1200px) {
   .grid--stats {
-    grid-template-columns: repeat(4, 1fr);
+    /* Switch the layout mode from Grid to Flexbox */
+    display: flex;
+    flex-wrap: wrap;
   }
-  .grid--stats__card--span-2 {
-    grid-column: span 2;
+  .grid--stats__card {
+    /* The flex property only applies at this breakpoint and up */
+    flex: 1 1 auto;
   }
 }
