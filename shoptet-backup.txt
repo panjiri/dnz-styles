@@ -1,0 +1,404 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/panjiri/dnz-styles@master/style.css">
+
+<style>
+@font-face {
+font-family: oktaneue;
+src: url(https://730597.myshoptet.com/user/documents/fonts/OktaNeue-Heavy.woff2);
+font-weight: 700;
+font-style: normal;
+}
+@font-face {
+font-family: oktaneue;
+src: url(https://730597.myshoptet.com/user/documents/fonts/OktaNeue-Regular.woff2);
+font-weight: 500;
+font-style: normal;
+}
+body, .external-fonts-loaded body, body.blank-mode {
+font-family: oktaneue;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: oktaneue !important;
+}
+</style>
+<style>
+
+/* carousel */
+@media (min-width: 768px) {
+#carousel {
+margin: 25px 50px;
+}
+}
+
+@media (min-width: 768px) {
+.carousel-inner {
+border-radius: 20px;
+}
+}
+
+#carousel .extended-banner-text {
+width: 100%;
+font-size: 14px;
+line-height: 1.7;
+}
+
+@media (min-width: 768px) {
+#carousel .extended-banner-text {
+width: 45%;
+}
+}
+#carousel a span.extended-banner-link {
+display: inline-flex !important;
+/* your CSS properties go here */
+}
+</style>
+<!-- /* Under carousel banners */ -->
+<style>
+/* banner after carousels */
+/* .content-wrapper.banners-top-block a span.extended-banner-title {
+max-width:45%;
+} */
+.content-wrapper.banners-top-block a span.extended-banner-text {
+color: black; /* Change 'red' to your desired color */
+}
+
+.extended-banner-link {
+        padding: 15px 20px !important;
+    background-color: var(--color-primary) !important;
+        display: flex !important;
+align-items: center !important;
+
+}
+
+.extended-banner-link::after {
+content: url('/user/documents/images/btn-arrow-right.svg');
+margin-left: 30px;
+}
+
+.extended-banner-link:hover::after {
+filter: invert(1); 
+}
+
+
+@media (min-width: 768px) {
+.extended-banner-texts, .banners-top-block .extended-banner-texts {
+    padding: 40px;
+}
+}
+.banners-top-block .extended-banner-texts, .next-to-carousel-banners .extended-banner-texts  {
+height: 100%;
+display: flex
+;
+flex-direction: column;
+justify-content: flex-start;
+}
+
+.extended-banner-text {
+flex: auto;
+}
+
+.extended-banner-link {
+    align-self: flex-end;
+
+}
+
+@media (min-width: 1024px) {
+    .next-to-carousel-banners > * {
+    flex: 0 0 33.3333% !important;
+    }
+}
+
+/* Header */
+#header > div > div.header-top > div.navigation-buttons > a > span {
+    display: none;
+}
+#header > div > div.header-top > div.navigation-buttons > div > a > span.cart-price.visible-lg-inline-block {
+    display: none !important;
+}
+
+.is-header-black .top-navigation-bar {
+    background-color: var(--header-bg);
+}
+
+@media (min-width: 992px) {
+.header-top {
+    padding-top: 10px;
+}
+}
+/* Navigation menu */
+#navigation > div {
+    font-size: 13px;
+}
+.navigation-in ul li a {
+text-transform: none;
+}
+.navigation-in ul li a b {
+font-weight: 400;
+}
+.is-header-black .navigation-in>ul>li.ext>a:after {
+    color: #32D13F !important;
+    font-size: 6px;
+}
+/* button icons */
+.navigation-buttons a{
+    padding: 0;
+    margin: 0;
+}
+/* login icon */
+#header > div > div.header-top > div.navigation-buttons > a:before {
+    font-size: 20px;
+    margin:0;
+}
+/* login arrow */
+#header > div > div.header-top > div.navigation-buttons > a:after {
+    display:none;
+}
+.login-window-visible #header .top-nav-button-login {
+background-color: transparent;
+border: none;
+}
+/* cart icon */
+#header > div > div.header-top > div.navigation-buttons > div > a:before {
+font-size: 20px;
+margin:0;
+}
+/* cart arrow */
+#header > div > div.header-top > div.navigation-buttons > div > a:after {
+display:none;
+}
+.top-navigation-bar-menu a {
+  color: white;
+  font-size: 13px !important;
+}
+@media (min-width: 992px) {
+.top-navigation-bar .container>div.top-navigation-contacts {
+padding: 0 0px !important;
+right: 0 !important;
+}
+}
+@media (max-width: 450px) {
+i[data-testid="headerCartCount"] {
+position: relative !important;
+left: 15px !important;
+top: -2px !important;
+}
+}
+.cart-window-visible #header .cart-count {
+border: none;
+background-color: transparent;
+color: var(--color-primary);
+z-index: 60;
+}
+.click-cart a {
+color: white !important;
+font-weight: 400 !important;
+}
+.search {
+margin-left: auto;
+}
+:focus-visible, [tabindex="0"]:focus-visible, input:focus-visible, input[type=checkbox].focus-visible+label, input[type=checkbox]:focus-visible+label, input[type=radio].focus-visible+label, input[type=radio]:focus-visible+label, select:focus-visible, textarea:focus-visible {
+box-shadow: none;
+}
+button[data-testid="searchBtn"]::after {
+content: none !important; /* This removes the unwanted icon */
+}
+button[data-testid="searchBtn"] {
+color: transparent !important; /* Makes the text invisible */
+}
+.header-top > div {
+flex: none;
+}
+.menu-helper > span {
+font-size: 13px;
+font-weight: 400;
+text-transform: none;
+}
+/* text-accent */
+.text-accent {
+    background:linear-gradient(180deg, transparent 95%, #32D13F 60%);
+    font-weight: 700;
+    color: #32D13F
+}
+
+
+/* welcome section */
+.welcome .welcome__content {
+        align-items: center;
+}
+.welcome {
+background-color: transparent !important;
+padding: 0;
+}
+
+
+.welcome h1 {
+color: black;
+font-size: 80px;
+text-align: left;
+}
+
+.welcome p {
+    text-align: left;
+}
+</style>
+<!-- Hide empty footer strangely injected after carousel -->
+<style>
+#content > div.content-wrapper.banners-benefits-block.js-banners-benefits-block > div {
+display: none;
+}
+</style>
+<!-- Footer -->
+<style>
+#footer h4, .h4 {
+margin-bottom: 10px;
+}
+
+.custom-footer ul {
+line-height: 0;
+}
+#footer ul {
+margin-top: 0px;
+}
+#footer ul a {
+padding: 0px 0;
+line-height: normal;
+text-decoration: underline;
+}
+
+#footer ul a:hover {
+text-decoration: none;
+}
+
+#footer ul li {
+margin-bottom: 10px;
+color: var(--footer-color);
+}
+
+#footer .accordion__content ul {
+margin-bottom: 30px;
+}
+
+#footer p {
+margin-bottom: 30px;
+line-height: 1.7;
+}
+
+.mb {
+margin-bottom: 30px !important;
+}
+
+.footer--social-icons {
+align-items: center;
+gap: 32px !important;
+}
+</style>
+<!-- Button -->
+<style>
+
+.btn, a.btn {
+    display: inline-flex !important;
+}
+.btn {
+display: flex !important;
+align-items: center !important;
+justify-content: space-between !important;
+font-family: oktaneue !important;
+border-radius: 32.5px !important;
+font-size: 13px !important;
+color: #000A1E !important;
+padding: 15px 20px !important;
+}
+
+.btn:hover {
+background-color: transparent !important;
+color: white !important;
+}
+
+.btn::after {
+content: url('/user/documents/images/btn-arrow-right.svg');
+/* margin-left: 10px; */
+}
+
+.btn:hover::after {
+filter: invert(1); 
+}
+
+
+</style>
+
+<!-- image banners -->
+<style>
+
+.image-banner__card--showroom span,
+.image-banner__card--showroom-detail span,
+.image-banner__card--accessories span {
+width: 200px;
+}
+
+@media (min-width: 800px) {
+.image-banner__card--showroom span,
+.image-banner__card--showroom-detail span,
+.image-banner__card--accessories span {
+width: 400px;
+    line-height: 1.2;
+        font-size: clamp(24px, 3.125vw, 60px);
+}
+}
+
+.image-banner__card--banner {
+font-size: clamp(48px, 6.25vw, 120px);
+align-items: center;
+}
+
+.image-banner__card {
+padding: 40px;
+}
+.image-banner__card--banner > span {
+width: 790px;
+line-height: 1.2;
+}
+</style>
+
+
+<!-- Section text -->
+<style>
+
+.section-text {
+    margin: 120px 0px;
+}
+</style>
+
+
+<!-- 
+Contact grid -->
+<style>
+.contact-grid {
+margin: 0;
+    justify-content: center;
+}
+@media (min-width: 800px) {
+.contact-grid {
+margin: 0;
+}
+}
+.contact-grid__meta a {
+color: #000A1E;
+text-decoration: underline;
+}
+.contact-grid__meta a:hover {
+color: #000A1E;
+text-decoration: none;
+}
+
+.contact-card__photo {
+width: 115px;
+height: 115px;
+}
+</style>
+
+<style>
+:root {
+--color-primary: #32D13F !important;
+--color-primary-hover: #32D13F !important;
+--header-bg: #000A1E !important;
+--colors-focus-primary: #32D13F !important;
+}</style>
