@@ -1,0 +1,21 @@
+.basic-description h2 {
+    color: #000A1E;
+    font-size: 50px;   
+    margin: 0 0 14px;
+}
+.basic-description p {
+    color: #000A1E;
+    font-size: 20px;   
+    margin: 14px 0;
+}
+.basic-description td {
+    width: 50%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+ .basic-description td :first-child {
+        padding-left: 0;
+}
+ .basic-description td :last-child {
+        padding-right: 0;
+}
