@@ -20,21 +20,6 @@
  .basic-description td:last-child {
         padding-right: 0;
 }
- .basic-description img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 30px;
-    
-}
- .basic-description td:has(img) {
-    max-width: 50% !important;
-    width: 600px;
-    display: inline-block;
-}
  .basic-description td:last-child:has(img) {
     width: 40% !important;
 }
@@ -48,6 +33,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50px;
+    border-radius: 30px;
 }
 
