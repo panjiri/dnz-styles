@@ -3,6 +3,9 @@
     font-size: 50px;   
     margin: 0 0 14px;
 }
+.basic-description table {
+    width: 100%;
+}
 .basic-description p {
     color: #000A1E;
     font-size: 20px;   
@@ -15,16 +18,18 @@
     position: relative;
 }
  .basic-description td:first-child {
-        padding-left: 0;
+    padding-left: 0;
 }
  .basic-description td:last-child {
-        padding-right: 0;
+    padding-right: 0;
 }
  .basic-description td:last-child:has(img) {
     width: 40% !important;
+    height: 440px;
 }
  .basic-description td:first-child:has(img) {
     width: 40% !important;
+    height: 440px;
 }
 .basic-description td img {
     position: absolute;
@@ -36,3 +41,11 @@
     border-radius: 30px;
 }
 
+@media (max-width: 1920px){
+ .basic-description td:last-child:has(img) {
+    height: 30vw;
+}
+ .basic-description td:first-child:has(img) {
+    height: 30vw;
+}
+}
