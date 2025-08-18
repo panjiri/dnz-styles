@@ -39,6 +39,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: 30px;
+    max-height: 440px;
 }
 
 @media (max-width: 1920px){
@@ -47,5 +48,8 @@
 }
  .basic-description td:first-child:has(img) {
     height: 30vw;
+}
+.basic-description td img {
+    max-height: 30vw;
 }
 }
