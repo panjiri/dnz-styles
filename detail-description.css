@@ -12,10 +12,42 @@
     width: 50%;
     padding-left: 50px;
     padding-right: 50px;
+    position: relative;
 }
- .basic-description td :first-child {
+ .basic-description td:first-child {
         padding-left: 0;
 }
- .basic-description td :last-child {
+ .basic-description td:last-child {
         padding-right: 0;
 }
+ .basic-description img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    
+}
+ .basic-description td:has(img) {
+    max-width: 50% !important;
+    width: 600px;
+    display: inline-block;
+}
+ .basic-description td:last-child:has(img) {
+    width: 40% !important;
+}
+ .basic-description td:first-child:has(img) {
+    width: 40% !important;
+}
+.basic-description td img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
