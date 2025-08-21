@@ -75,8 +75,14 @@
     .basic-description td {
         width: 100% !important;
         display: block;
-        height: auto;
+        height: auto !important;
         padding: 0;
+    }
+    .basic-description td:last-child:has(img) {
+        width: 1000% !important;
+    }
+    .basic-description td:first-child:has(img) {
+        width: 1000% !important;
     }
     .basic-description tr {
         display: block;
