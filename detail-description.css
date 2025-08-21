@@ -1,7 +1,9 @@
-.basic-description h1, .basic-description h2, .basic-description h3, .basic-description h4 {
+.basic-description h1, .basic-description h2, .basic-description h3, .basic-description h4, .basic-description h1 *, .basic-description h2, .basic-description h3, .basic-description h4 {
     color: #000A1E;
-    font-size: 50px;   
+    font-size: 40px !important;   
     margin: 30px 0 14px;
+    font-family: oktaneue;
+    font-weight: 500;
 }
 .basic-description table {
     width: 100%;
@@ -10,6 +12,9 @@
     color: #000A1E;
     font-size: 20px;   
     margin: 14px 0;
+}
+
+ .basic-description p:not(:has(img)) {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -58,4 +63,25 @@
 .basic-description td img {
     max-height: 30vw;
 }
+}
+@media (max-width: 1100px){
+    .basic-description td img {
+        position: relative;
+        max-height: unset;
+        padding: 0;
+        width: auto;
+        height: auto;
+    }
+    .basic-description td {
+        width: 100% !important;
+        display: block;
+        height: auto;
+        padding: 0;
+    }
+    .basic-description tr {
+        display: block;
+    }
+    .basic-description tbody {
+        display: block;
+    }
 }
