@@ -3,7 +3,7 @@
     font-size: 40px !important;   
     margin: 30px 0 14px;
     font-family: oktaneue;
-    font-weight: 500;
+    font-weight: 600;
 }
 .basic-description table {
     width: 100%;
@@ -51,6 +51,10 @@
     object-fit: cover;
     border-radius: 30px;
     max-height: 440px;
+}
+
+.shp-tab-link {
+    font-weight: 500 !important;
 }
 
 @media (max-width: 1920px){
