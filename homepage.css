@@ -1,0 +1,5 @@
+@media (min-height:850px) and (min-width: 1100px){
+    .carousel-inner>.item>a>img {
+        max-height: calc(100vh - 260px);
+    }
+}
