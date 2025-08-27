@@ -43,6 +43,7 @@
         width: calc(33.333333% - 20px / 3) !important;
         display: flex;
         align-items: stretch;
+        background: white !important;
     }
 
     .navigation-in>ul>li.ext>ul>li>div>a {
@@ -57,8 +58,6 @@
     }
 
     .menu-item-category {
-        background-color: white !important;
-        border-radius: 20px;
         margin-top: 0 !important;
     }
 
