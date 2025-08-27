@@ -41,6 +41,14 @@
         padding: 0 !important;
         flex-basis: calc(33.333333% - 20px / 3) !important;
         width: calc(33.333333% - 20px / 3) !important;
+        display: flex;
+        align-items: stretch;
+    }
+
+    .navigation-in>ul>li.ext>ul>li>div>a {
+        height: 100%;
+        display: flex;
+        align-items: center;
     }
 
     .menu-image {
@@ -53,14 +61,17 @@
         border-radius: 20px;
         margin-top: 0 !important;
     }
+
     .menu-item-category a span {
         color: #0f0f0f !important;
     }
+
     .navigation-in>ul>li.ext>ul>li.menu-item-category>div {
-            width: 100%;
+        width: 100%;
         text-align: center;
         padding: 0 10px;
     }
+
     .navigation-in>ul>li.ext>ul>li.menu-item-category>a {
         display: none;
     }
