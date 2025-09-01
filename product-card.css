@@ -30,3 +30,7 @@ body .flag.flag-discount:before {
 body .flag.flag-discount .price-save {
     color: #000A1E;
 }
+body .product .p {
+    border-radius: 5px;
+    box-shadow: none;
+}
