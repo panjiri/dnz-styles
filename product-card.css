@@ -1,4 +1,4 @@
-body .add-to-cart-button {
+body .add-to-cart-button, body .product-btn .btn {
     font-size: 14px !important;
     color: #000A1E;
     background: #CFCFE9 !important;
@@ -13,10 +13,10 @@ body .add-to-cart-button {
     letter-spacing: 0.02em;
     margin: 0 auto;
 }
-.add-to-cart-button:after {
+.add-to-cart-button:after, body .product-btn .btn:after {
     display: none;
 }
-body .add-to-cart-button:hover {
+body .add-to-cart-button:hover, body .product-btn .btn:hover {
     background: #32D13F !important;
      color: #000A1E !important;
 }
