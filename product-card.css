@@ -1,0 +1,22 @@
+body .add-to-cart-button {
+    font-size: 14px !important;
+    color: #000A1E;
+    background: #CFCFE9 !important;
+    border: none;
+    text-align: center;
+    font-weight: 600;
+    justify-content: center !important;
+    padding: 10px 17px !important;
+    min-height: 35px;
+    box-shadow: none;
+    width: auto;
+    letter-spacing: 0.02em;
+    margin: 0 auto;
+}
+.add-to-cart-button:after {
+    display: none;
+}
+body .add-to-cart-button:hover {
+    background: #32D13F !important;
+     color: #000A1E;
+}

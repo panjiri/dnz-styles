@@ -50,6 +50,7 @@
         height: 100%;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     .menu-image {
@@ -63,6 +64,10 @@
 
     .menu-item-category a span {
         color: #0f0f0f !important;
+    }
+
+    .menu-item-category a {
+        justify-content: center;
     }
 
     .navigation-in>ul>li.ext>ul>li.menu-item-category>div {
