@@ -34,3 +34,20 @@ body .product .p {
     border-radius: 5px;
     box-shadow: none;
 }
+body .product .flag {
+    padding: 7px 8px 6px !important;
+    text-box-trim: trim-both !important;
+}
+
+body .products .price {
+    display: flex;
+    gap: 10px;
+    font-family: oktaneue;
+}
+body .products .price strong:not(:first-child) {
+    color: #32D13F;
+}
+body .products .price .price-standard {
+    order: 1;
+    font-family: oktaneue !important;
+}
