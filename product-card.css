@@ -21,6 +21,10 @@ body .add-to-cart-button:hover, body .product-btn .btn:hover {
      color: #000A1E !important;
 }
 
+.stars .star.is-active:hover {
+    color: #32D13F !important;
+}
+
 body .flag.flag-discount:before {
     background: #32D13F;
     background-image: none;
@@ -45,9 +49,21 @@ body .products .price {
     font-family: oktaneue;
 }
 body .products .price strong:not(:first-child) {
-    color: #32D13F;
+    color: #32D13F !important;
 }
 body .products .price .price-standard {
     order: 1;
+    font-family: oktaneue !important;
+}
+body .price-standard>span {
+    font-size: 14px !important;
+}
+body {
+    .products-block .p-bottom .p-desc {
+        line-height: 1.4;
+    }
+}
+
+.external-fonts-loaded ol.cart-header, .external-fonts-loaded .next-step, .external-fonts-loaded .price-wrapper, .external-fonts-loaded .price-additional, .external-fonts-loaded .price-measure, .external-fonts-loaded .price-final, .external-fonts-loaded .price-save, .external-fonts-loaded .price-standard, .external-fonts-loaded .btn, .external-fonts-loaded .products .name {
     font-family: oktaneue !important;
 }

@@ -1,0 +1,3 @@
+body .quantity .increase, body .quantity .decrease{
+    display: none;
+}
