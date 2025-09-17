@@ -63,6 +63,12 @@ body {
         line-height: 1.4;
     }
 }
+body .products-block .p-desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 
 .external-fonts-loaded ol.cart-header, .external-fonts-loaded .next-step, .external-fonts-loaded .price-wrapper, .external-fonts-loaded .price-additional, .external-fonts-loaded .price-measure, .external-fonts-loaded .price-final, .external-fonts-loaded .price-save, .external-fonts-loaded .price-standard, .external-fonts-loaded .btn, .external-fonts-loaded .products .name {
     font-family: oktaneue !important;
